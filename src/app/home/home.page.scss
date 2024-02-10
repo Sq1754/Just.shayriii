@@ -1,27 +1,109 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500&family=Protest+Riot&family=Tiro+Devanagari+Hindi:ital@1&display=swap');
+// font-family: 'Noto Nastaliq Urdu', serif;
+// font-family: 'Protest Riot', sans-serif;          Heading
+// font-family: 'Tiro Devanagari Hindi', serif;
+
+
+ion-header{
+  ion-toolbar{
+    .header{
+      display: flex;
+    }
+    ion-title{
+      .logo img{
+        height: 60px;
+        margin: 17px 0px 10px 0px;
+      }
+    }
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+// BODY
+
+//Banner
+ion-content{
+
+  #banner{
+    img{
+      margin: 10px 0px;
+      width: 100%;
+      height: 30vh;
+    }
+  }
+  .line{
+    border-bottom: 2px solid rgba(128, 128, 128, 0.784);
+  }
+
+// Information Section
+
+.info {
+  font-style: italic;
+  span{
+    font-family: 'Protest Riot', sans-serif; 
+    padding-left: 20px;
+  }
+}
+h1,h2{
+  font-family: 'Protest Riot', sans-serif; 
+  padding-left: 20px;
+}
+h1{
+  margin-left: 20px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.cards{
+  display: flex;
+  ion-card{
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    ion-card-content{
+      img{
+        height: 50vh;
+      }
+    }
+  }
+  
+  .columns{
+    margin: 0px auto;
+      .txt{
+        padding: 20px;
+        font-family: 'Protest Riot', serif;
+      }
+      .txt-hindi{
+        
+        padding: 20px;
+        font-family: 'Tiro Devanagari Hindi', serif;
+      }
+      .txt-urdu{
+        padding: 20px;
+        font-family: 'Noto Nastaliq Urdu', serif;
+        text-align: right;
+        font-size: 15px;
+      }
+  }
 }
 
-#container a {
-  text-decoration: none;
+.box{
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 6px black;
+  border: 3px solid grey;
+  border-radius: 25px;
+  background-color: whitesmoke;
+
 }
+
+@media screen and (max-width:730px){
+  .cards{
+    display: block;
+  }
+
+
+}
+
+}
+
+
+

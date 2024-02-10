@@ -1,20 +1,153 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <div class="header">
+      <ion-title>
+        <!-- Logo -->
+        <div class="logo">
+          <img src="../../assets/logo/logo-no-background.svg" />
+        </div>
+      </ion-title>
+      <!-- Menu-Button -->
+      <ion-buttons slot="end">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+    </div>
   </ion-toolbar>
 </ion-header>
 
+<!-- Main Content -->
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Banner  -->
+  <div id="banner">
+    <img src="../../assets/logo/logo-banner-no-background.svg" alt="Shayri" />
   </div>
+  <div class="line"></div>
+
+  <!-- Info-Section  -->
+  <div class="info">
+    <h1>What You Will Find Here</h1>
+    <span
+      ><b><i>#JustDilSeShayri</i></b></span
+    >
+    <ul>
+      <li>
+        On this page you will find the shayri related to many topics icluding
+        Love, Motivation, Funny, Attitude, Mother etc. <br />
+      </li>
+      <br />
+      <li>
+        you will find all shayri written in Hinglish, Hindi, and Urdu. <br />
+      </li>
+      <br />
+      <li>Each Shayri is also displayed with images also.</li>
+      <br />
+      <li>
+        You can also share your written your shayri in our suggestion section.
+        It will be uploaded here with your name and your social media account.
+      </li>
+      <br />
+      <li>All Shayri are stored in our Collection page.</li>
+    </ul>
+  </div>
+  <br />
+
+  <!-- CONTENT  -->
+
+  <h1>Latest Shayri</h1>
+  <div class="box">
+  <h2>Shayri Wala Love &#9829;</h2>
+  <div class="cards">
+    <ion-card>
+      <ion-card-content>
+        <img src="../../assets/Shayri-love.jpg" alt="love Shayri" />
+        <ion-buttons>
+          <a target="_blank" href="https://www.instagram.com/p/C2-XNmkv9Ui/?igsh=ZnhhNDZ0N24zODhr"><ion-label>View Post</ion-label></a>
+        </ion-buttons>
+      </ion-card-content>
+    </ion-card>
+    <div class="columns">
+      <ion-col>
+        <div class="txt">
+          humari bhi muskurahat pe log deewane to hai <br />
+          dekhne ko mere chehre par vo khushi <br />
+          saare jamane se alag khadi hojaye, <br />
+          ladki hai vo esi <br />
+          khusnaseeb to bhot hu me, <br />
+          mili sarphiri muje uss jaisi. <br />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="txt-hindi">
+          हमारी भी मुस्कराहट पर लोग दीवाने तो है <br />
+          देखने को मेरे चेहरे पर वो खुसी <br />
+          सारे ज़माने से अलग खड़ी हो जाए, <br />
+          ल़डकि है वो एसी <br />
+          खुशनसीब तो बहुत हु में, <br />
+          मिली सरफिरि मुझे उस जैसी <br />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="txt-urdu">
+          ہماری بھی مسکراہٹ پر لوگ دیوانے طو ہیں دیکھنے کو میرے چہرے پر ہنسی
+          <br />
+          سارے جمانے سے الاغ کھڑی ہو جائے <br />
+          لڑکی ہیں وھ ایسی <br />
+          خوشنصیب طو بہت ہو مے <br />
+          ملی سرپھری مجھے اُس جیسی <br />
+        </div>
+      </ion-col>
+    </div>
+  </div>
+</div>
+    <br>
+
+
+  <h1>Trending Shayri</h1>
+  <div class="box">
+  
+  <h2>Shayri for your Love</h2>
+  <div class="cards">
+    <ion-card>
+      <ion-card-content>
+        <img src="../../assets/Shayri for love.png" alt="love Shayri" />
+        <ion-buttons>
+          <a target="_blank" href="https://www.instagram.com/p/C2r6Vw9vD3e/?igsh=MW1nM25iajdvcmx4Zw=="><ion-label>View Post</ion-label></a>
+        </ion-buttons>
+      </ion-card-content>
+    </ion-card>
+    <div class="columns">
+      <ion-col>
+        <div class="txt">
+          humari bhi muskurahat pe log deewane to hai <br />
+          dekhne ko mere chehre par vo khushi <br />
+          saare jamane se alag khadi hojaye, <br />
+          ladki hai vo esi <br />
+          khusnaseeb to bhot hu me, <br />
+          mili sarphiri muje uss jaisi. <br />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="txt-hindi">
+          हमारी भी मुस्कराहट पर लोग दीवाने तो है <br />
+          देखने को मेरे चेहरे पर वो खुसी <br />
+          सारे ज़माने से अलग खड़ी हो जाए, <br />
+          ल़डकि है वो एसी <br />
+          खुशनसीब तो बहुत हु में, <br />
+          मिली सरफिरि मुझे उस जैसी <br />
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="txt-urdu">
+          ہماری بھی مسکراہٹ پر لوگ دیوانے طو ہیں دیکھنے کو میرے چہرے پر ہنسی
+          <br />
+          سارے جمانے سے الاغ کھڑی ہو جائے <br />
+          لڑکی ہیں وھ ایسی <br />
+          خوشنصیب طو بہت ہو مے <br />
+          ملی سرپھری مجھے اُس جیسی <br />
+        </div>
+      </ion-col>
+    </div>
+  </div>
+</div>
+
 </ion-content>
