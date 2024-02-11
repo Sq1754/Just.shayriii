@@ -1,23 +1,36 @@
-<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <div class="header">
-      <ion-title>
-        <!-- Logo -->
-        <div class="logo">
-          <img src="../../assets/logo/logo-no-background.svg" />
-        </div>
-      </ion-title>
-      <!-- Menu-Button -->
-      <ion-buttons slot="end">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
+    <ion-buttons slot="end">
+    <div class="login">
+      <ion-button>
+        <ion-icon name="log-in">
+      </ion-icon>Login
+    </ion-button></div>
+    <div class="menu-btn">
+      <ion-menu-button></ion-menu-button>
     </div>
+    </ion-buttons>
+    <ion-title>
+    <div class="name">
+      <img src="../../assets/logo/logo-no-background.svg" />
+    </div>
+  </ion-title>
   </ion-toolbar>
 </ion-header>
-  <!-- //navbar -->
 
-  
+<header class="header">
+  <nav class="navbar">
+      <a href="/home" class="active" ><ion-icon name="logo-github"></ion-icon></a>
+      <a href="#"><ion-icon name="albums"></ion-icon></a>
+      <a href="/alumni"><ion-icon name="home"></ion-icon></a>
+      <a href="/reunion"><ion-icon name="logo-codepen"></ion-icon></a>
+      <a href="/membership"><ion-icon name="camera"></ion-icon></a>
+      <a href="/donate"><ion-icon name="exit"></ion-icon></a>
+      <a href="../team"><ion-icon name="call"></ion-icon></a>
+  </nav>
+</header>
+
+        
 <!-- Main Content -->
 <ion-content [fullscreen]="true">
   <!-- Banner  -->

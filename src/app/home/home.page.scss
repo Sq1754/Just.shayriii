@@ -5,19 +5,155 @@
 // font-family: 'Tiro Devanagari Hindi', serif;
 
 
-ion-header{
-  ion-toolbar{
+
+  //navbar
+  .menu-btn{
+    display: none;
+  }
     .header{
-      display: flex;
+
+      z-index: 1;
+      margin-left: 10px;
+    
+    
+  }
+  .navbar{
+    font-family: "Josefin Sans", sans-serif;
+    position: absolute;
+    background: none;
+    z-index: 1;
+    width: 60px;
+    margin: 10px auto;
+    // margin-top: 50%;
+    height: 70%;
+    display: hidden;
+    background-color: rgba(194, 194, 194, 0.53);
+    display: flex;
+    /* align-items: center; */
+    border: 2px solid rgb(44, 0, 80);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+  }
+  
+  
+  .navbar a{
+    display: inline-block;
+    justify-content: space-evenly;
+    font-size: 18px;
+    padding: 0px 20px;
+    color:#240057;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+  }
+
+
+  
+  ion-icon{
+    height: 40px;
+    width:35px;
+  }
+  
+  .navbar a:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(68, 0, 108, 0.801);
+    border-radius: 100px;
+    padding: 4px 10px;
+  
+  }
+  @media screen and (max-width:768px){
+    .menu-btn{
+      display: block;
     }
-    ion-title{
-      .logo img{
-        height: 60px;
-        margin: 17px 0px 10px 0px;
-      }
+    .header{
+      display: none;
     }
   }
-}
+  
+  
+  // header
+  ion-header{
+    height: 10vh;
+    ion-toolbar{
+      height: 10vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+    //  box-shadow: -1px 5px 6px -2px rgb(62, 0, 107);
+    ion-buttons{
+      margin-top: 8px;
+      p{
+        font-size: 0.5rem;
+      } 
+    }  
+    .name{
+      // padding-top: 10px;
+      height: 7vh;
+      font-weight: bold;
+      width: 20vw;
+      display: flex;
+      margin-top: 10px;
+      padding-left: 10px;
+      text-transform: uppercase;
+      font-size: 15px;
+      letter-spacing: .1em;
+      align-items: center;
+      #sub{
+        font-weight: normal;
+        font-size: 10px;
+    }
+    }
+  
+      .name img{
+        margin-top: -8px;
+        height: 5vh;
+        width: 16vw;
+      }
+  
+  
+      @media (max-width:500px) {
+        .name{
+          // padding-top: 10px;
+          height: 6vh;
+          width: 20vw;
+          display: flex;
+          // padding-left: 10px;
+          text-transform: uppercase;
+          font-size: 8px;
+          letter-spacing: .1em;
+          align-items: center;
+          #sub{
+            font-weight: normal;
+            font-size: 6px;
+        }
+        }
+        .name img{
+          height: 4vh;
+          width: 16vw;
+        }
+      }
+  
+      .name p{
+        display: contents;
+      }
+      }
+    }
+  
+  @media (max-width:500px) {
+    ion-header{
+      height: 8vh;
+  
+    ion-toolbar{
+      height: 8vh;
+    }
+    }
+  }
+  
 
 
 // BODY
@@ -105,6 +241,3 @@ h1{
 }
 
 }
-
-
-
